@@ -48,4 +48,8 @@ class Engine:
     def orchestrate(self, agent_id: str, policy_id: str, model_id: str, inputs: List[str]) -> str:
         if not self.validate_policy(policy_id, agent_id):
             raise HarnessException('Policy validation failed')
-        return self.execute_model(model_id, inputs)
+        result = self.execute_model(model_id, inputs)
+        # Additional error handling
+        if not result:
+            raise HarnessException('Model execution failed')
+        return result
