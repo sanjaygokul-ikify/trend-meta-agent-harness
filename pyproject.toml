@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "meta-agent-harness"
+version = "0.1.0"
+description = "Distributed AI agent orchestration framework"
+authors = ["Architect <architect@example.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.7"
+fastapi = "^0.104"
+asgi-starlette = "^0.5"
+sentry-sdk = "^1.14"
