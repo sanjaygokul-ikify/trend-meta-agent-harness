@@ -1,0 +1,1 @@
+__pycache__/\n.env\n*.log\n*.db\n*.sqlite3\n/.mypy_cache/\n/.pytest_cache/\n/.coverage\nhtmlcov/
