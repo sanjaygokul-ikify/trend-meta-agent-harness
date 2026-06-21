@@ -34,6 +34,8 @@ class Engine:
             return False
         # Perform policy validation logic here
         # For demonstration purposes, we'll assume a simple string matching
+        if agent.policy is None or policy.content is None:
+            return False
         return policy.content == agent.policy
 
     def execute_model(self, model_id: str, inputs: List[str]) -> str:
