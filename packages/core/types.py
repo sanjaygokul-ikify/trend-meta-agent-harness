@@ -16,3 +16,17 @@ class TrendMeta:
     def __str__(self) -> str:
         return f'TrendMeta(name={self.name}, description={self.description})'
 
+class Agent:
+    def __init__(self, id: str, policy: str):
+        self.id = id
+        self.policy = policy
+
+class Policy:
+    def __init__(self, id: str, content: str):
+        self.id = id
+        self.content = content
+
+class Model:
+    def __init__(self, id: str, inputs: List[str]):
+        self.id = id
+        self.inputs = inputs
