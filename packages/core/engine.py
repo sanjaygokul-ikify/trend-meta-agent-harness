@@ -58,4 +58,4 @@ class Engine:
             return result
         except Exception as e:
             logger.error(f'Orchestration failed: {str(e)}')
-            raise
+            raise HarnessException(f'Orchestration failed: {str(e)}')
